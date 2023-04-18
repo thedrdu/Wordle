@@ -22,10 +22,10 @@ function getRandomWord(){
 
 function getAllIndices(str, char) {
     var indices = [];
-    for (var i = 0; i < str.length; i++) {
-      if (str.charAt(i) === char) {
-        indices.push(i);
-      }
+    for (var i = 0; i < str.length; i++){
+        if (str.charAt(i) === char){
+            indices.push(i);
+        }
     }
     return indices;
   }
@@ -33,7 +33,7 @@ function getAllIndices(str, char) {
 //returns an array of letterResult objects
 function checkGuess(guess){
     let result = [];
-    for(let i = 0; i < guess.length; i++) {
+    for(let i = 0; i < guess.length; i++){
         const letter = guess[i];
         const index = getAllIndices(answer, letter);
         const letterObj = Object.create(letterResult);
@@ -153,7 +153,7 @@ wordInput.addEventListener("keydown", function(e) {
     }
 });
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function(event){
     wordInput.focus();
 });
 
