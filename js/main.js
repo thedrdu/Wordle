@@ -178,6 +178,7 @@ function insertWord(word){
     else if(guessesLeft === 0){
         wordInput.disabled = true;
         displayMessage.textContent = `Out of guesses! Answer is: ${answer}`;
+        resetButton.style.display = "block";
     }
 
     wordInput.value = "";
