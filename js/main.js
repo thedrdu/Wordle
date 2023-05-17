@@ -1,8 +1,8 @@
 import { words } from "./words.js";
 
 const MAXIMUM_GUESSES = 6;
-// let answer = getRandomWord();
-let answer = "apnea";
+let answer = getRandomWord();
+// let answer = "apnea";
 let guessesLeft = MAXIMUM_GUESSES;
 const wordInput = document.getElementById("word-input");
 const displayMessage = document.getElementById("display-message");
